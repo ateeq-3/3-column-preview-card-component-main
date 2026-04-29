@@ -2,11 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-self: center;
-    /*align-items: stretch;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 300px;*/
     width: 300px;
     border-radius: 10px;
 }
@@ -24,10 +19,13 @@ p{
     font-family: "big shoulders", sans-serif;
     font: weight 700px;;
     padding: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 .item1 button{
-    border: 0px;
+    border: 2px;
     border-radius: 20px;
     height: 40px;
     width: 120px;
@@ -35,6 +33,7 @@ p{
     color: hsl(31, 77%, 52%);
     background-color: hsl(0, 0%, 95%);
     font-family: "lexend deca",sans-serif;
+    
 }
 
 .item2{
@@ -62,10 +61,12 @@ p{
     font-family: "big shoulders", sans-serif;
     font: weight 700px;;
     padding: 30px;
-}
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
 
 .item3 button{
-    border: 0px;
+    border: 2px;
     border-radius: 20px;
     height: 40px;
     width: 120px;
@@ -74,3 +75,50 @@ p{
     background-color: hsl(0, 0%, 95%);
     font-family: "lexend deca",sans-serif;
 }
+.item1 button:hover{
+    background-color: hsl(31, 77%, 52%) ;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.item2 button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+.item3 button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+@media(min-width: 1440px) {.main
+    {    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: stretch;
+    padding-top: 400px;
+    width: 820px;
+    height: 512px;
+    }
+    .item1 button,.item2 button,.item3 button {
+        margin-top: 80px;
+        
+    }
+    .item1 img,.item2 img,.item3 img{
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .item1 p, .item2 p, .item3 p {
+        margin-top: 40px;
+    }
+   .item1{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px
+    }
+    .item3{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+}*/
+    
